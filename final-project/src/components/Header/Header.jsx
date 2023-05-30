@@ -1,6 +1,6 @@
 import { NavLink } from "react-router-dom";
 import styles from "./Header.module.css";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 
 function Header() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -14,7 +14,6 @@ function Header() {
       <nav className={styles["header__nav"]}>
         <div className={styles["header__logo"]}>
           <h4 data-aos="fade-down">Resonate</h4>
-          <div className={styles["header__logo-overlay"]}></div>
         </div>
 
         <ul className={styles["header__menu"]}>
@@ -39,7 +38,7 @@ function Header() {
           </li>
         </ul>
 
-        <ul className={styles["header__menu-mobile"]} data-aos="fade-down">
+        <ul className={styles["header__menu-mobile"]}>
           <li>
             <img
               src="../../../public/menu.svg"
