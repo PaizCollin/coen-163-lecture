@@ -20,7 +20,7 @@ function Header() {
             <NavLink to="/discover">Discover</NavLink>
           </li>
           <li>
-            <NavLink to="/sellers">Sellers</NavLink>
+            <NavLink to="/sellerss">Sellers</NavLink>
           </li>
           <li>
             <NavLink to="/login">Login</NavLink>
@@ -34,7 +34,7 @@ function Header() {
 
         <ul className={styles["header__menu-mobile"]} data-aos="fade-down">
           <li>
-            <img src="assets/react.svg" alt="menu" />
+            <img src="../../../public/menu.svg" alt="menu" />
           </li>
         </ul>
       </nav>
