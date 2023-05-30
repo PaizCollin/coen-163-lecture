@@ -26,12 +26,16 @@ function Header() {
             <NavLink to="/login">Login</NavLink>
           </li>
           <li>
-            <NavLink to="/signup">Sign Up</NavLink>
+            <div className={styles["button-white"]}>
+              <NavLink to="/signup">Sign Up</NavLink>
+            </div>
           </li>
         </ul>
 
         <ul className={styles["header__menu-mobile"]} data-aos="fade-down">
-          <li>{/* <img src="assets/menu.svg" alt="menu" /> */}</li>
+          <li>
+            <img src="assets/react.svg" alt="menu" />
+          </li>
         </ul>
       </nav>
     </header>
