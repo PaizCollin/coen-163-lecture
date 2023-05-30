@@ -6,8 +6,13 @@ import Item from "./pages/Item/Item.jsx";
 import Login from "./pages/Login/Login.jsx";
 import Seller from "./pages/Seller/Seller.jsx";
 import SignUp from "./pages/Signup/Signup.jsx";
+import initAOS from "./aos";
+import { useEffect } from "react";
 
 function App() {
+  useEffect(() => {
+    initAOS(); // Initialize AOS animation
+  }, []);
   return (
     <Router>
       <Header />
