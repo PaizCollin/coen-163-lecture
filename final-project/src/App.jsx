@@ -17,14 +17,15 @@ function App() {
     <Router>
       <Header />
       <Routes>
-        <Route path="/" component={Home} />
-        <Route path="/discover" component={Home} />
-        <Route path="/sellers" component={Home} />
-        <Route path="/item" component={Item} />
-        <Route path="/login" component={Login} />
-        <Route path="/signup" component={SignUp} />
-        <Route path="/seller" component={Seller} />
+        <Route path="/" element={<Home />} />
+        <Route path="/discover" element={<Home />} />
+        <Route path="/sellers" element={<Home />} />
+        <Route path="/item" element={<Item />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/signup" element={<SignUp />} />
+        <Route path="/seller" element={<Seller />} />
       </Routes>
+
       <Footer />
     </Router>
   );

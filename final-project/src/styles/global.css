@@ -51,6 +51,7 @@ a {
 /* buttons */
 
 .button-white {
+  font-family: var(--montserrat);
   font-size: 14px;
   line-height: 20px;
   font-weight: 600;
@@ -60,4 +61,21 @@ a {
   border-radius: 8px;
   border: none;
   cursor: pointer;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.button-blue {
+  font-family: var(--montserrat);
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 600;
+  color: var(--color-white);
+  background-color: var(--primary-color);
+  padding: 12px 52px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  overflow: hidden;
+  white-space: nowrap;
 }
