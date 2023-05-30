@@ -17,7 +17,7 @@ function Header() {
           <div className={styles["header__logo-overlay"]}></div>
         </div>
 
-        <ul className={styles["header__menu"]} data-aos="fade-down">
+        <ul className={styles["header__menu"]}>
           <li>
             <NavLink exact to="/">
               Home

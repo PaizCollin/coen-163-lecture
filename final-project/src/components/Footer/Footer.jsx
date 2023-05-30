@@ -7,7 +7,7 @@ function Footer() {
       <div className={styles["footer__links"]}>
         <div className={styles["footer__links-col"]}>
           <h4 className={styles["footer__links-title"]}>Pages</h4>
-          <ul className={styles["footer__links-list"]} data-aos="fade-down">
+          <ul className={styles["footer__links-list"]} data-aos="fade-in">
             <li>
               <NavLink exact to="/">
                 Home
@@ -30,7 +30,7 @@ function Footer() {
 
         <div className={styles["footer__links-col"]}>
           <h4 className={styles["footer__links-title"]}>Learn More</h4>
-          <ul className={styles["footer__links-list"]} data-aos="fade-down">
+          <ul className={styles["footer__links-list"]} data-aos="fade-in">
             <li>
               <NavLink exact to="/">
                 About Us
@@ -53,7 +53,7 @@ function Footer() {
 
         <div className={styles["footer__links-col"]}>
           <h4 className={styles["footer__links-title"]}>Get Started</h4>
-          <ul className={styles["footer__links-list"]} data-aos="fade-down">
+          <ul className={styles["footer__links-list"]} data-aos="fade-in">
             <li>
               <NavLink to="/login">Login</NavLink>
             </li>
