@@ -30,7 +30,7 @@ function Header() {
             <NavLink to="/discover">Discover</NavLink>
           </li>
           <li>
-            <NavLink to="/sellerss">Sellers</NavLink>
+            <NavLink to="/sellers">Sellers</NavLink>
           </li>
           <li>
             <NavLink to="/login">Login</NavLink>
@@ -62,7 +62,7 @@ function Header() {
                   </NavLink>
                 </li>
                 <li>
-                  <NavLink to="/sellerss" onClick={handleMenuClick}>
+                  <NavLink to="/sellers" onClick={handleMenuClick}>
                     Sellers
                   </NavLink>
                 </li>
