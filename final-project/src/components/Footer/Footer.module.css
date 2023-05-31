@@ -5,8 +5,7 @@
   justify-content: center;
   background-color: var(--primary-color);
   width: 100%;
-  position: fixed;
-  bottom: 0;
+  position: relative;
 }
 
 .footer__links {

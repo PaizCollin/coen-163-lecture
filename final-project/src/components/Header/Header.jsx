@@ -13,10 +13,14 @@ function Header() {
     <header>
       <nav className={styles["header__nav"]}>
         <div className={styles["header__logo"]}>
-          <h4 data-aos="fade-down">Resonate</h4>
+          <h4 data-aos="fade-down">
+            <NavLink exact to="/">
+              Resonate
+            </NavLink>
+          </h4>
         </div>
 
-        <ul className={styles["header__menu"]}>
+        <ul className={styles["header__menu"]} data-aos="fade-down">
           <li>
             <NavLink exact to="/">
               Home

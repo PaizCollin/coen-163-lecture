@@ -1,0 +1,77 @@
+@import "../../styles/global.css";
+
+.item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+  gap: 4px;
+  max-width: 240px;
+  max-height: 300px;
+}
+
+.item__image {
+  width: 240px;
+  height: 240px;
+  object-fit: cover;
+  object-position: center;
+  position: relative;
+}
+
+.item__image-cover {
+  width: 240px;
+  height: 240px;
+  object-fit: cover;
+  object-position: center;
+  border: none;
+  border-radius: 6px;
+}
+
+.item__image-icon {
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+  cursor: pointer;
+  position: absolute;
+  top: 8px; /* Adjust the top position as needed */
+  right: 8px; /* Adjust the right position as needed */
+  filter: brightness(0) invert(1);
+  opacity: 0.8;
+}
+
+.item__content {
+  display: flex;
+  flex-direction: row;
+  align-items: end;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.item__content-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  gap: 4px;
+}
+
+.item__content-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: end;
+  gap: 4px;
+}
+
+.item__content h2,
+.item__content h3 {
+  font-family: var(--montserrat);
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--color-black);
+  cursor: pointer;
+}
+
+.item__content h3 {
+  opacity: 0.8;
+}
