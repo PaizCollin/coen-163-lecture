@@ -20,7 +20,7 @@ function Header() {
           </h4>
         </div>
 
-        <ul className={styles["header__menu"]}>
+        <ul className={styles["header__menu"]} data-aos="fade-down">
           <li>
             <NavLink exact to="/">
               Home

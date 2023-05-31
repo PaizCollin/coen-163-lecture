@@ -5,6 +5,7 @@ const initAOS = () => {
   AOS.init({
     duration: 1000,
     offset: 100,
+    delay: 100,
   });
 };
 
