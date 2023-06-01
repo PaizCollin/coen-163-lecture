@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import Hero from "../../components/Hero/Hero";
 import Item from "../../components/Item/Item";
 import Seller from "../../components/Seller/Seller";
@@ -6,6 +7,7 @@ import styles from "./Home.module.css";
 function Home() {
   const items = [
     {
+      id: 1,
       cover: "../../../public/abbey-road.jpeg",
       artist: "The Beatles",
       album: "Abbey Road",
@@ -13,6 +15,7 @@ function Home() {
       price: "$20",
     },
     {
+      id: 2,
       cover: "../../../public/elvis-presley.jpg",
       artist: "Elvis Presley",
       album: "Elvis Presley",
@@ -20,6 +23,7 @@ function Home() {
       price: "$50",
     },
     {
+      id: 3,
       cover: "../../../public/led-zeppelin.jpg",
       artist: "Led Zeppelin",
       album: "Led Zeppelin",
@@ -27,6 +31,7 @@ function Home() {
       price: "$30",
     },
     {
+      id: 4,
       cover: "../../../public/the-dark-side-of-the-moon.jpeg",
       artist: "Pink Floyd",
       album: "The Dark Side of the Moon",
@@ -37,24 +42,28 @@ function Home() {
 
   const sellers = [
     {
+      id: 1,
       avatar: "../../../public/abbey-road.jpeg",
       name: "Store Name",
       distance: "1.2 mi",
       type: "Store Type",
     },
     {
+      id: 2,
       avatar: "../../../public/elvis-presley.jpg",
       name: "Store Name",
       distance: "1.2 mi",
       type: "Store Type",
     },
     {
+      id: 3,
       avatar: "../../../public/led-zeppelin.jpg",
       name: "Store Name",
       distance: "1.2 mi",
       type: "Store Type",
     },
     {
+      id: 4,
       avatar: "../../../public/the-dark-side-of-the-moon.jpeg",
       name: "Store Name",
       distance: "1.2 mi",
@@ -83,7 +92,9 @@ function Home() {
                 data-aos="fade-up"
                 data-aos-delay={index * 200} // Increase delay for each item
               >
+                <Link to={`/item/${item.id}`}>
                 <Item item={item} />
+                </Link>
               </div>
             ))}
           </div>

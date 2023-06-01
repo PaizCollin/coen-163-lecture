@@ -19,13 +19,11 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/discover" element={<Home />} />
-        
-        <Route path="/item" element={<Item />} />
+        <Route path="/item/:itemId" element={<Item />} />
         <Route path="/login" element={<Login />} />
         <Route path="/signup" element={<SignUp />} />
         <Route path="/sellers" element={<Sellers />} />
       </Routes>
-
       <Footer />
     </Router>
   );

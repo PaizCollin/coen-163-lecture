@@ -3,10 +3,12 @@ import Item from "../../components/Item/Item";
 import Seller from "../../components/Seller/Seller";
 
 import styles from "./Sellers.module.css";
+import { Link } from 'react-router-dom';
 
 function Sellers() {
   const items = [
     {
+      id: 1,
       cover: "../../../public/abbey-road.jpeg",
       artist: "The Beatles",
       album: "Abbey Road",
@@ -14,6 +16,7 @@ function Sellers() {
       price: "$20",
     },
     {
+      id: 2,
       cover: "../../../public/presley2.jpeg",
       artist: "Elvis Presley",
       album: "Elvis Presley",
@@ -21,6 +24,7 @@ function Sellers() {
       price: "$50",
     },
     {
+      id: 3,
       cover: "../../../public/led-zeppelin.jpg",
       artist: "Led Zeppelin",
       album: "Led Zeppelin",
@@ -28,6 +32,7 @@ function Sellers() {
       price: "$30",
     },
     {
+      id: 4,
       cover: "../../../public/the-dark-side-of-the-moon.jpeg",
       artist: "Pink Floyd",
       album: "The Dark Side of the Moon",
@@ -35,6 +40,7 @@ function Sellers() {
       price: "$40",
     },
     {
+      id: 5,
       cover: "../../../public/kiss.jpeg",
       artist: "KISS",
       album: "Rock And Roll All Over",
@@ -42,6 +48,7 @@ function Sellers() {
       price: "$20",
     },
     {
+      id: 6,
       cover: "../../../public/strokes.jpg",
       artist: "The Strokes",
       album: "The New Abnormal",
@@ -49,6 +56,7 @@ function Sellers() {
       price: "$50",
     },
     {
+      id: 7,
       cover: "../../../public/kendrick.jpg",
       artist: "Kendrick Lamar",
       album: "DAMN",
@@ -56,6 +64,7 @@ function Sellers() {
       price: "$30",
     },
     {
+      id: 8,
       cover: "../../../public/arcticmonkeys.jpg",
       artist: "Arctic Monkeys",
       album: "Worst Nightmare",
@@ -63,33 +72,14 @@ function Sellers() {
       price: "$40",
     },
     {
+      id: 9,
       cover: "../../../public/abbey-road.jpeg",
       artist: "The Beatles",
       album: "Abbey Road",
       distance: "1.2 mi",
       price: "$20",
     },
-    {
-      cover: "../../../public/elvis-presley.jpg",
-      artist: "Elvis Presley",
-      album: "Elvis Presley",
-      distance: "6.7 mi",
-      price: "$32",
-    },
-    {
-      cover: "../../../public/led-zeppelin.jpg",
-      artist: "Led Zeppelin",
-      album: "Led Zeppelin",
-      distance: "3.4 mi",
-      price: "$30",
-    },
-    {
-      cover: "../../../public/presley2.jpeg",
-      artist: "Pink Floyd",
-      album: "The Dark Side of the Moon",
-      distance: "2.1 mi",
-      price: "$40",
-    },
+
   ];
 
 
@@ -122,12 +112,9 @@ function Sellers() {
           </div>
           <div className={styles["home__content-list"]} >
             {items.map((item, index) => (
-              <div
-                key={item}
-
-              >
+              <Link to={`/item/${item.id}`} key={item.id}> {/* Changed here */}
                 <Item item={item} />
-              </div>
+              </Link>
             ))}
           </div>
         </div>
