@@ -8,6 +8,8 @@ import Sellers from "./pages/Sellers/Sellers.jsx";
 import SignUp from "./pages/Signup/Signup.jsx";
 import initAOS from "./aos";
 import { useEffect } from "react";
+import Error from "./pages/Error/Error.jsx";
+import Discover from "./pages/Discover/Discover.jsx";
 
 function App() {
   useEffect(() => {
@@ -18,11 +20,12 @@ function App() {
       <Header />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/discover" element={<Home />} />
+        <Route path="/discover" element={<Discover />} />
         <Route path="/item/:itemId" element={<Item />} />
         <Route path="/login" element={<Login />} />
         <Route path="/signup" element={<SignUp />} />
         <Route path="/sellers" element={<Sellers />} />
+        <Route path="/error" element={<Error />} />
       </Routes>
       <Footer />
     </Router>

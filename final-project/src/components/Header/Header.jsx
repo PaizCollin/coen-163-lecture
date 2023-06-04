@@ -27,17 +27,17 @@ function Header() {
             </NavLink>
           </li>
           <li>
-            <NavLink to="/discover">Discover</NavLink>
+            <NavLink to="/error">Discover</NavLink>
           </li>
           <li>
             <NavLink to="/sellers">Sellers</NavLink>
           </li>
           <li>
-            <NavLink to="/login">Login</NavLink>
+            <NavLink to="/error">Login</NavLink>
           </li>
           <li>
             <div className={styles["button-white"]}>
-              <NavLink to="/signup">Sign Up</NavLink>
+              <NavLink to="/error">Sign Up</NavLink>
             </div>
           </li>
         </ul>
@@ -57,7 +57,7 @@ function Header() {
                   </NavLink>
                 </li>
                 <li>
-                  <NavLink to="/discover" onClick={handleMenuClick}>
+                  <NavLink to="/error" onClick={handleMenuClick}>
                     Discover
                   </NavLink>
                 </li>
@@ -67,13 +67,13 @@ function Header() {
                   </NavLink>
                 </li>
                 <li>
-                  <NavLink to="/login" onClick={handleMenuClick}>
+                  <NavLink to="/error" onClick={handleMenuClick}>
                     Login
                   </NavLink>
                 </li>
                 <li>
                   <div className={styles["button-white"]}>
-                    <NavLink to="/signup" onClick={handleMenuClick}>
+                    <NavLink to="/error" onClick={handleMenuClick}>
                       Sign Up
                     </NavLink>
                   </div>

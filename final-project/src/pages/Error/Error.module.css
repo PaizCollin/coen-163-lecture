@@ -1,1 +1,68 @@
 @import "../../styles/global.css";
+
+.hero {
+    width: 100%;
+    display: block;
+    height: 300px;
+    position: relative;
+  }
+  
+  .hero__bg {
+    display: flex;
+    width: 100%;
+    background-image: url("../../../public/blue_bg.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: repeat-y;
+    height: 100%;
+    filter: blur(2px);
+    -webkit-filter: blur(2px);
+    z-index: -1;
+  }
+  
+  .hero__content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: var(--montserrat);
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 64px 256px;
+  }
+  
+  .hero__content-title {
+    color: white;
+    font-size: 48px;
+    font-weight: 800;
+    text-align: center;
+    margin-bottom: 24px;
+    text-shadow: 0 0 12px rgba(0, 0, 0, 1);
+    overflow: hidden;
+    white-space: nowrap;
+  }
+  
+  .hero__content-subtitle {
+    color: var(--color-white);
+    font-size: 20px;
+    font-weight: 300;
+    text-align: center;
+    margin-bottom: 50px;
+    text-shadow: 0 0 6px rgba(0, 0, 0, 1);
+    overflow: hidden;
+    white-space: nowrap;
+  }
+
+  .hero__content-subtitle2 {
+    color: darkcyan;
+    font-size: 20px;
+    font-weight: 300;
+    text-align: center;
+    margin-bottom: 24px;
+    overflow: hidden;
+    white-space: nowrap;
+  }

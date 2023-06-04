@@ -14,16 +14,16 @@ function Footer() {
               </NavLink>
             </li>
             <li>
-              <NavLink to="/discover">Discover</NavLink>
+              <NavLink to="/error">Discover</NavLink>
             </li>
             <li>
               <NavLink to="/sellers">Sellers</NavLink>
             </li>
             <li>
-              <NavLink to="/login">Login</NavLink>
+              <NavLink to="/error">Login</NavLink>
             </li>
             <li>
-              <NavLink to="/signup">Sign Up</NavLink>
+              <NavLink to="/error">Sign Up</NavLink>
             </li>
           </ul>
         </div>
@@ -32,21 +32,21 @@ function Footer() {
           <h4 className={styles["footer__links-title"]}>Learn More</h4>
           <ul className={styles["footer__links-list"]} data-aos="fade-in">
             <li>
-              <NavLink exact to="/">
+              <NavLink exact to="/error">
                 About Us
               </NavLink>
             </li>
             <li>
-              <NavLink to="/">Blog</NavLink>
+              <NavLink to="/error">Blog</NavLink>
             </li>
             <li>
-              <NavLink to="/">Become a Seller</NavLink>
+              <NavLink to="/error">Become a Seller</NavLink>
             </li>
             <li>
-              <NavLink to="/">Contact Us</NavLink>
+              <NavLink to="/error">Contact Us</NavLink>
             </li>
             <li>
-              <NavLink to="/">FAQs</NavLink>
+              <NavLink to="/error">FAQs</NavLink>
             </li>
           </ul>
         </div>
@@ -55,10 +55,10 @@ function Footer() {
           <h4 className={styles["footer__links-title"]}>Get Started</h4>
           <ul className={styles["footer__links-list"]} data-aos="fade-in">
             <li>
-              <NavLink to="/login">Login</NavLink>
+              <NavLink to="/error">Login</NavLink>
             </li>
             <li>
-              <NavLink to="/signup">Sign Up</NavLink>
+              <NavLink to="/error">Sign Up</NavLink>
             </li>
           </ul>
         </div>
