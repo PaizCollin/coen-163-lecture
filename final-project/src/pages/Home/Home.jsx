@@ -43,31 +43,31 @@ function Home() {
   const sellers = [
     {
       id: 1,
-      avatar: "../../../public/abbey-road.jpeg",
-      name: "Store Name",
+      avatar: "../../../public/img1.png",
+      name: "Abby Griffith",
       distance: "1.2 mi",
-      type: "Store Type",
+      type: "Private Seller",
     },
     {
       id: 2,
-      avatar: "../../../public/elvis-presley.jpg",
-      name: "Store Name",
+      avatar: "../../../public/img2.png",
+      name: "Jordan Holmes",
       distance: "1.2 mi",
-      type: "Store Type",
+      type: "Private Seller",
     },
     {
       id: 3,
-      avatar: "../../../public/led-zeppelin.jpg",
-      name: "Store Name",
+      avatar: "../../../public/img3.png",
+      name: "Kathy Smith",
       distance: "1.2 mi",
-      type: "Store Type",
+      type: "Private Seller",
     },
     {
       id: 4,
-      avatar: "../../../public/the-dark-side-of-the-moon.jpeg",
-      name: "Store Name",
+      avatar: "../../../public/img4.png",
+      name: "Greg Caulfield",
       distance: "1.2 mi",
-      type: "Store Type",
+      type: "Private Seller",
     },
   ];
 
