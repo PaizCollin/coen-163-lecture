@@ -33,11 +33,11 @@ function Header() {
             <NavLink to="/sellers">Sellers</NavLink>
           </li>
           <li>
-            <NavLink to="/error">Login</NavLink>
+            <NavLink to="/login">Login</NavLink>
           </li>
           <li>
             <div className={styles["button-white"]}>
-              <NavLink to="/error">Sign Up</NavLink>
+              <NavLink to="/signup">Sign Up</NavLink>
             </div>
           </li>
         </ul>
@@ -67,13 +67,13 @@ function Header() {
                   </NavLink>
                 </li>
                 <li>
-                  <NavLink to="/error" onClick={handleMenuClick}>
+                  <NavLink to="/login" onClick={handleMenuClick}>
                     Login
                   </NavLink>
                 </li>
                 <li>
                   <div className={styles["button-white"]}>
-                    <NavLink to="/error" onClick={handleMenuClick}>
+                    <NavLink to="/signup" onClick={handleMenuClick}>
                       Sign Up
                     </NavLink>
                   </div>
