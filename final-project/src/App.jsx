@@ -5,7 +5,7 @@ import Home from "./pages/Home/Home.jsx";
 import Item from "./pages/Item/Item.jsx";
 import Login from "./pages/Login/Login.jsx";
 import Sellers from "./pages/Sellers/Sellers.jsx";
-import SignUp from "./pages/Signup/Signup.jsx";
+import SignUp from "./pages/SignUp/SignUp.jsx";
 import initAOS from "./aos";
 import { useEffect } from "react";
 import Error from "./pages/Error/Error.jsx";
