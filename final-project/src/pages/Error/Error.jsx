@@ -15,6 +15,7 @@ function Error() {
           
           <h3 className={styles["hero__content-subtitle"]} >
             Sorry, the page you were looking for could not be found.
+            <br /> ( It may still be under construction. )
           </h3>
           
           <h3 className={styles["hero__content-subtitle2"]} >
