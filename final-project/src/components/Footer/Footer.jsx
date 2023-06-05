@@ -20,10 +20,10 @@ function Footer() {
               <NavLink to="/sellers">Sellers</NavLink>
             </li>
             <li>
-              <NavLink to="/error">Login</NavLink>
+              <NavLink to="/login">Login</NavLink>
             </li>
             <li>
-              <NavLink to="/error">Sign Up</NavLink>
+              <NavLink to="/signup">Sign Up</NavLink>
             </li>
           </ul>
         </div>
@@ -55,10 +55,10 @@ function Footer() {
           <h4 className={styles["footer__links-title"]}>Get Started</h4>
           <ul className={styles["footer__links-list"]} data-aos="fade-in">
             <li>
-              <NavLink to="/error">Login</NavLink>
+              <NavLink to="/login">Login</NavLink>
             </li>
             <li>
-              <NavLink to="/error">Sign Up</NavLink>
+              <NavLink to="/signup">Sign Up</NavLink>
             </li>
           </ul>
         </div>
