@@ -95,7 +95,10 @@ function Item() {
           <h3>{item.album}</h3>
           <p>{item.distance}</p>
           <h4>{item.price}</h4>
-          <button>Add to Cart</button> 
+          <div className={styles["button-container"]}>
+              <button className={styles["button"]}>Find Nearby</button> 
+             <button className={styles["button"]}>Other Sellers</button> 
+            </div>
         </div>
       </div>
 
