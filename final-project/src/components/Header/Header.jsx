@@ -42,7 +42,7 @@ function Header({ loggedIn, handleLogout }) {
                 </NavLink>
               </li>
               <li>
-                <NavLink to="/error">Discover</NavLink>
+                <NavLink to="/discover">Discover</NavLink>
               </li>
               <li>
                 <NavLink to="/sellers">Sellers</NavLink>
@@ -72,7 +72,7 @@ function Header({ loggedIn, handleLogout }) {
                       </NavLink>
                     </li>
                     <li>
-                      <NavLink to="/error" onClick={handleMenuClick}>
+                      <NavLink to="/discover" onClick={handleMenuClick}>
                         Discover
                       </NavLink>
                     </li>
@@ -115,7 +115,7 @@ function Header({ loggedIn, handleLogout }) {
                 </NavLink>
               </li>
               <li>
-                <NavLink to="/error">Discover</NavLink>
+                <NavLink to="/discover">Discover</NavLink>
               </li>
               <li>
                 <NavLink to="/sellers">Sellers</NavLink>
@@ -148,7 +148,7 @@ function Header({ loggedIn, handleLogout }) {
                       </NavLink>
                     </li>
                     <li>
-                      <NavLink to="/error" onClick={handleMenuClick}>
+                      <NavLink to="/discover" onClick={handleMenuClick}>
                         Discover
                       </NavLink>
                     </li>
