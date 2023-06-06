@@ -29,6 +29,7 @@
   gap: 64px;
   list-style: none;
   background-color: var(--primary-color);
+  z-index: 100;
 }
 
 .header__menu li {
@@ -88,9 +89,8 @@
   margin: 0 auto;
 }
 
-.header__menu-mobile-dropdown li:hover {
+.header__menu-mobile img:hover {
   opacity: 0.8;
-  background-color: rgba(255, 255, 255, 0.1);
 }
 
 @media screen and (max-width: 900px) {

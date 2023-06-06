@@ -56,7 +56,7 @@ a {
   font-family: var(--montserrat);
   font-size: 14px;
   line-height: 20px;
-  font-weight: 600;
+  font-weight: 400;
   color: var(--primary-color);
   background-color: var(--color-white);
   padding: 12px 52px;
@@ -65,13 +65,14 @@ a {
   cursor: pointer;
   overflow: hidden;
   white-space: nowrap;
+  margin: 0 auto;
 }
 
 .button-white-border {
   font-family: var(--montserrat);
   font-size: 14px;
   line-height: 20px;
-  font-weight: 600;
+  font-weight: 400;
   color: var(--primary-color);
   background-color: var(--color-white);
   padding: 12px 52px;
@@ -80,13 +81,14 @@ a {
   cursor: pointer;
   overflow: hidden;
   white-space: nowrap;
+  margin: 0 auto;
 }
 
 .button-blue {
   font-family: var(--montserrat);
   font-size: 14px;
   line-height: 20px;
-  font-weight: 600;
+  font-weight: 400;
   color: var(--color-white);
   background-color: var(--primary-color);
   padding: 12px 52px;
@@ -95,6 +97,7 @@ a {
   cursor: pointer;
   overflow: hidden;
   white-space: nowrap;
+  margin: 0 auto;
 }
 
 .button-white:hover,

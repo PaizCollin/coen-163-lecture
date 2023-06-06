@@ -68,6 +68,7 @@
 .home__content-discover-item-lg {
   position: relative;
   width: 100%;
+  cursor: pointer;
 }
 
 .home__content-discover-item-sm {

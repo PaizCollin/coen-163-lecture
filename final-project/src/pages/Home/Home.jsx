@@ -93,7 +93,7 @@ function Home() {
                 data-aos-delay={index * 200} // Increase delay for each item
               >
                 <Link to={`/item/${item.id}`}>
-                <Item item={item} />
+                  <Item item={item} />
                 </Link>
               </div>
             ))}
@@ -114,7 +114,9 @@ function Home() {
                 data-aos="fade-up"
                 data-aos-delay={index * 200} // Increase delay for each item
               >
-                <Seller seller={seller} />
+                <Link to={`/seller/${seller.id}`}>
+                  <Seller seller={seller} />
+                </Link>
               </div>
             ))}
           </div>
