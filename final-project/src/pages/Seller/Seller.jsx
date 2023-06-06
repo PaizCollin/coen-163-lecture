@@ -2,10 +2,12 @@ import Hero from "../../components/Hero/Hero";
 import Item from "../../components/Item/Item";
 import Seller from "../../components/Seller/Seller";
 
-import styles from "./Sellers.module.css";
-import { Link } from 'react-router-dom';
+import styles from "./Seller.module.css";
+import { Link } from "react-router-dom";
+import { useParams } from "react-router-dom";
 
 function Sellers() {
+  const { sellerId } = useParams();
   const items = [
     {
       id: 1,
@@ -79,26 +81,56 @@ function Sellers() {
       distance: "1.2 mi",
       price: "$20",
     },
-
   ];
 
+  const sellers = [
+    {
+      id: 1,
+      avatar: "../../../public/img1.png",
+      name: "Abby Griffith",
+      distance: "1.2 mi",
+      type: "Private Seller",
+    },
+    {
+      id: 2,
+      avatar: "../../../public/img2.png",
+      name: "Jordan Holmes",
+      distance: "1.2 mi",
+      type: "Private Seller",
+    },
+    {
+      id: 3,
+      avatar: "../../../public/img3.png",
+      name: "Kathy Smith",
+      distance: "1.2 mi",
+      type: "Private Seller",
+    },
+    {
+      id: 4,
+      avatar: "../../../public/img4.png",
+      name: "Greg Caulfield",
+      distance: "1.2 mi",
+      type: "Private Seller",
+    },
+  ];
 
-
+  const seller = sellers.find((seller) => seller.id === parseInt(sellerId));
+  console.log(seller);
+  if (!seller) return <div>Seller not found</div>;
 
   return (
     <>
       <div className={styles["hero"]}>
         <div className={styles["hero__bg"]}></div>
         <div className={styles["hero__content"]}>
-          <h1 className={styles["hero__content-title"]}>
-            Jimmy Jones Record Shop
+          <h1 data-aos="fade-in" className={styles["hero__content-title"]}>
+            {seller.name}{" "}
           </h1>
-          <h3 className={styles["hero__content-subtitle"]} >
-            John Doe has carefully handpicked an exceptional collection
+          <h3 data-aos="fade-in" className={styles["hero__content-subtitle"]}>
+            {seller.name} has carefully handpicked an exceptional collection
             <br /> of vinyl records that spans genres and eras, catering to
-            <br /> both avid collectors  and casual music enthusiasts.
+            <br /> both avid collectors and casual music enthusiasts.
           </h3>
-
         </div>
       </div>
 
@@ -110,19 +142,22 @@ function Sellers() {
               By Category
             </div>
           </div>
-          <div className={styles["home__content-list"]} >
+          <div className={styles["home__content-list"]}>
             {items.map((item, index) => (
-              <Link to={`/item/${item.id}`} key={item.id}> {/* Changed here */}
-                <Item item={item} />
-              </Link>
+              <div
+                key={item}
+                data-aos="fade-up"
+                data-aos-delay={index * 200} // Increase delay for each item
+              >
+                <Link to={`/item/${item.id}`} key={item.id}>
+                  {" "}
+                  {/* Changed here */}
+                  <Item item={item} />
+                </Link>
+              </div>
             ))}
           </div>
         </div>
-
-
-
-
-
       </div>
     </>
   );

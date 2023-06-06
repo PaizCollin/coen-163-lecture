@@ -1,9 +1,11 @@
 import { useParams } from "react-router-dom";
 import { Link } from "react-router-dom";
 import styles from "./Item.module.css";
+import Itemmm from "../../components/Item/Item";
+import React from "react";
 
 function Item() {
-  const { itemId } = useParams(); 
+  const { itemId } = useParams();
   console.log(itemId);
   const items = [
     {
@@ -78,7 +80,6 @@ function Item() {
       distance: "1.2 mi",
       price: "$20",
     },
-
   ];
   const item = items.find((item) => item.id === parseInt(itemId));
   console.log(item);
@@ -87,36 +88,43 @@ function Item() {
   return (
     <div className={styles["item"]}>
       <div className={styles["item__content"]}>
-        <div className={styles["item__cover-container"]}>
-          <img className={styles["item__cover"]} src={item.cover} alt={item.artist} />
+        <div className={styles["item__cover-container"]} data-aos="fade-right">
+          <img
+            className={styles["item__cover"]}
+            src={item.cover}
+            alt={item.artist}
+          />
         </div>
-        <div className={styles["item__details"]}>
+        <div className={styles["item__details"]} data-aos="fade-left">
           <h2>{item.artist}</h2>
           <h3>{item.album}</h3>
           <p>{item.distance}</p>
           <h4>{item.price}</h4>
           <div className={styles["button-container"]}>
-              <button className={styles["button"]}>Find Nearby</button> 
-             <button className={styles["button"]}>Other Sellers</button> 
-            </div>
+            <div className={styles["button-blue"]}>Locate Seller</div>
+            <div className={styles["button-white-border"]}>Other Sellers</div>
+          </div>
         </div>
       </div>
 
       <div className={styles["item__other-items"]}>
-        <h2>Other Albums</h2>
+        <h2 data-aos="fade-right">Other Albums From This Seller</h2>
         <div className={styles["grid-container"]}>
-        <div className={styles["other-items__grid"]}>
-          {items
-            .filter((otherItem) => otherItem.id !== item.id)
-            .map((otherItem) => (
-              <div key={otherItem.id} className={styles["other-item__container"]}>
-                <Link to={`/item/${otherItem.id}`}>
-                  <img className={styles["other-item__cover"]} src={otherItem.cover} alt={otherItem.artist} />
-                  <div>{otherItem.artist}</div>
-                </Link>
+          <div className={styles["other-items__grid"]}>
+            {items.slice(0, 4).map((item, index) => (
+              <div
+                key={item}
+                data-aos="fade-up"
+                data-aos-delay={index * 200} // Increase delay for each item
+              >
+                <React.Fragment key={index}>
+                  <Link to={`/item/${item.id}`}>
+                    <Itemmm item={item} />
+                  </Link>
+                </React.Fragment>
               </div>
             ))}
-        </div>
+          </div>
         </div>
       </div>
     </div>
