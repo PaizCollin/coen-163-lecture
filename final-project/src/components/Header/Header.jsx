@@ -27,7 +27,7 @@ function Header() {
             </NavLink>
           </li>
           <li>
-            <NavLink to="/error">Discover</NavLink>
+            <NavLink to="/discover">Discover</NavLink>
           </li>
           <li>
             <NavLink to="/sellers">Sellers</NavLink>
