@@ -33,7 +33,7 @@ function App() {
     <Router>
       <Header loggedIn={loggedIn} handleLogout={handleLogout} />
       <Routes>
-        <Route path="/" element={<Home />} />
+        <Route path="/" element={<Home loggedIn={loggedIn} />} />
         <Route path="/discover" element={<Discover />} />
         <Route path="/item/:itemId" element={<Item />} />
         <Route path="/login" element={<Login handleLogin={handleLogin} />} />

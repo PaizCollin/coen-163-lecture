@@ -3,8 +3,10 @@ import Hero from "../../components/Hero/Hero";
 import Item from "../../components/Item/Item";
 import Seller from "../../components/Seller/Seller";
 import styles from "./Home.module.css";
+import Popup from "../../components/PopUp/Popup";
+import { useState, useEffect } from "react";
 
-function Home() {
+function Home({ loggedIn }) {
   const items = [
     {
       id: 1,
@@ -71,8 +73,19 @@ function Home() {
     },
   ];
 
+  const [showPopup, setShowPopup] = useState(false);
+
+  useEffect(() => {
+    setShowPopup(true); // Open the popup when the component mounts
+  }, []);
+
+  const closePopup = () => {
+    setShowPopup(false);
+  };
+
   return (
     <>
+      <div>{showPopup && !loggedIn && <Popup onClose={closePopup} />}</div>
       <div className={styles["home__header-search"]}>
         <Hero />
       </div>

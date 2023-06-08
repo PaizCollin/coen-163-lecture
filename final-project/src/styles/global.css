@@ -66,6 +66,7 @@ a {
   overflow: hidden;
   white-space: nowrap;
   margin: 0 auto;
+  display: inline-block;
 }
 
 .button-white-border {
@@ -82,6 +83,7 @@ a {
   overflow: hidden;
   white-space: nowrap;
   margin: 0 auto;
+  display: inline-block;
 }
 
 .button-blue {
@@ -98,6 +100,7 @@ a {
   overflow: hidden;
   white-space: nowrap;
   margin: 0 auto;
+  display: inline-block;
 }
 
 .button-white:hover,
